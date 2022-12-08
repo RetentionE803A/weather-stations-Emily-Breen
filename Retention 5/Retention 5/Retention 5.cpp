@@ -25,9 +25,13 @@ int main()
 	std::cout << "Enter the number of stations: ";
 	std::cin >> stationNo;
 		
-	// Function call  
-	stationtemp(stationNo);
+	// DON'T BOTHER WITH INPUT ERROR CHECKING UNLESS EXPLICITDLY MENTIONED IN QUESTION
+	// IF YOU CAN DO IT ONCE ....
 
+	// Function call  
+	stationtemp(stationNo);	// GOOD USE OF FUNCTION CALL
+
+	// COMMENTS IN CAPS FOR VISIBILITY NOT ANGER
 
 	system("Pause");
 	return 0;
@@ -37,7 +41,7 @@ int main()
 void stationtemp(int t_station) // Function definition for question part 1
 {
 	//Local variables to Function - 
-	int count = 0;
+	int count = 0;// COMMENT FOR EVERY VARIABLE
 	int highestTemp = 0;
 	int temp = 0;
 	std::string station_Name = " ";
@@ -56,6 +60,8 @@ void stationtemp(int t_station) // Function definition for question part 1
 	
 
 		std::cout << "Enter the Temperature at this station: ";
+		// USE STATION NAME IN PROMPT
+		std::cout << "Enter the Temperature at " << station_Name << " station: ";
 		std::cin >> temp;
 
 		if (temp > highestTemp)
@@ -70,3 +76,7 @@ void stationtemp(int t_station) // Function definition for question part 1
 
 
 } // End functiom
+
+
+// OVERALL GODD CLEAN CLEAR CODE JUST THE MISSED STATION NAME THING.
+// VERY GOOD VARIABLE NAMES, GOOD LAYOUT
